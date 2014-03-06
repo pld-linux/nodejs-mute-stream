@@ -1,17 +1,15 @@
 %define		pkg	mute-stream
 Summary:	Bytes go in, but they don't come out (when muted)
 Name:		nodejs-%{pkg}
-Version:	0.0.3
+Version:	0.0.4
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/read
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	6ed0470ad5443989c57d7fa153ce76a3
+# Source0-md5:	16425598bcade4d0e766633f1a8d3243
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
-Requires:	nodejs-mute-stream < 0.1.0
-Requires:	nodejs-mute-stream >= 0.0.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
